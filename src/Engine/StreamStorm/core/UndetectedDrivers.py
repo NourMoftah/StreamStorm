@@ -22,7 +22,7 @@ class UndetectedDrivers(Selenium):
     def __init__(self, base_profile_dir: str) -> None:
         self.base_profile_dir: str = base_profile_dir
         self.youtube_login_url: str = "https://accounts.google.com/ServiceLogin?service=youtube"
-        self.config_json_path: str = join(dirname(normpath(self.base_profile_dir)), ""data.json"")
+        self.config_json_path: str = join(dirname(normpath(self.base_profile_dir)), "data.json")
         
         super().__init__(base_profile_dir, background=False)
 
